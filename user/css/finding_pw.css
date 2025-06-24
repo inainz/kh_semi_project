@@ -1,0 +1,86 @@
+/* 전체 레이아웃 */
+.container {
+    width: 400px;
+}
+
+/* 중앙 정렬 */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 입력 칸 */
+.finding_pw {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.finding_pw input {
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 3px solid #a47864;
+    box-sizing: border-box;
+}
+
+/* placeholder */
+.finding_pw input::placeholder {
+    color: #999;
+    font-size: 15px;
+}
+
+/* 입력 칸 선택 시 테두리 유지 */
+.finding_pw input:focus {
+    outline: none;
+    border-color: #a47864;
+}
+
+/* 비밀번호 찾기 버튼 */
+#finding_pw_btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    background-color: #a47864;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+/* 비밀번호 찾기 버튼 hover */
+#finding_pw_btn:hover {
+    background-color: #8b634d;
+}
+
+/* 화면 이동 링크 */
+.finding_pw_link {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* | */
+.finding_pw_link span {
+    color: #a47864;
+    margin: 0 8px;
+    font-weight: bold;
+}
+
+.finding_pw_link a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 2px;
+}
+
+/* 화면 이동 링크 hover */
+.finding_pw_link a:hover {
+    color: #a47864;
+    text-decoration: underline;
+    cursor: pointer;
+}
