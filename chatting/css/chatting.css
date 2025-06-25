@@ -1,5 +1,5 @@
 #cMain{
-    width: 300px;
+    width: 350px;
     /* height: 600px; */
     border: 3px solid black;
     background-color: antiquewhite;
@@ -16,28 +16,31 @@
 
 #messageDiv{
     border: 1px solid black;
+    background-color: white;
     margin: 5px;
     padding: 3px;
-    background-color: white;
+}
 
+#chatMessage{
+    width: 240px ;
+    margin-right: 10px;
 }
 
 #message{
-    width: 270px;
-    height: 20px;
-    
+    width: 100%;
+    height: 100px;
+    display: inline-block;
     vertical-align: text-top;
     white-space: normal;
     word-wrap: break-word;
     word-break: break-word;
     resize: none;
-    border-right: none;
-    border-radius: 30px;
 }
 
-/* #message::placeholder{
-    font-size: 20px;
-} */
+#chatSend{
+    width: 70px;
+    display: inline-block;
+}
 
 #sendButton{
     font-size: 20px;
