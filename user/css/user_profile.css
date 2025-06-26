@@ -9,7 +9,7 @@ body {
 }
 
 /* 왼쪽 영역 : 회원 정보, 메뉴 */
-.user_info_left {
+.user_profile_left {
   width: 280px;
   padding: 20px;
   box-sizing: border-box;
@@ -34,6 +34,25 @@ body {
 
 .nickname {
   color: #a47864;
+}
+
+/* 구독, 차단 버튼 */
+.btn_1 input[type="button"] {
+  width: 60px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #a47864;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn_1 input[type="button"]:hover {
+  background-color: #8b634d;
 }
 
 /* 팔로워, 팔로잉, 차단목록 */
@@ -65,14 +84,14 @@ hr {
 }
 
 /* 메뉴 목록 */
-.user_info_menu ul {
+.user_profile_menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
   flex-grow: 1;
 }
 
-.user_info_menu ul li {
+.user_profile_menu ul li {
   padding: 12px 10px;
   cursor: pointer;
   border-left: 4px solid transparent;
@@ -82,15 +101,15 @@ hr {
 }
 
 /* 메뉴 hover */
-.user_info_menu ul li:hover,
-.user_info_menu ul li.active {
+.user_profile_menu ul li:hover,
+.user_profile_menu ul li.active {
   color: #a47864;
   border-left: 4px solid #a47864;
   background-color: #f1ebe4;
 }
 
 /* 오른쪽 : 메뉴 제목, 메뉴 내용 */
-.user_info_right {
+.user_profile_right {
   flex: 1;
   padding: 30px;
   box-sizing: border-box;

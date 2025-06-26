@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원의 프로필</title>
+    <link href="css/user_profile.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="user_profile_left">
+        <div class="user_data">
+
+            <!-- 회원정보 -->
+            <p class="welcome"><span class="nickname">닉네임</span>님의 프로필</p>
+
+            <br/>
+
+            <!-- 팔로우 -->
+            <div class="follow">
+                <div>
+                    <span class="label">팔로워</span>
+                    <span id="follower_count">0</span>
+                </div>
+                <div>
+                    <span class="label">팔로잉</span>
+                    <span id="following_count">0</span>
+                </div>
+                <div class="btn_1">
+                    <!-- 구독 -->
+                    <input type="button" id="subscribe_btn" value="구독">
+
+                    <!-- 차단 -->
+                    <input type="button" id="block_btn" value="차단">
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="user_profile_menu">
+            <!-- 메뉴 목록 -->
+            <ul>
+                <li>회원의 게시글</li>
+                <li>회원의 댓글</li>
+        </div>
+    </div>
+    <div class="user_profile_right">
+        <!-- 선택한 메뉴 제목 -->
+        <div class="menu_name">
+            <p>제목</p>
+        </div>
+
+        <hr>
+
+        <!-- 선택한 메뉴 내용 -->
+        <div class="menu_content">
+            <p>목록</p>
+        </div>
+    </div>
+</body>
+
+</html>
