@@ -25,6 +25,7 @@ body {
     box-sizing: border-box;
     margin-bottom: 20px;
     text-align: center;
+    line-height: 60px;
 }
 
 /* 화면 이동 링크 */
