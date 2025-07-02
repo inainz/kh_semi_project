@@ -88,6 +88,14 @@ hr {
   transition: all 0.3s ease;
 }
 
+.user_info_menu a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 /* 메뉴 hover */
 .user_info_menu ul li:hover,
 .user_info_menu ul li.active {
