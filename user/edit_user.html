@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정보 변경하기</title>
+    <link href="css/edit_user.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- 이름 확인 -->
+        <div class="edit_user">
+            <input type="text" id="ed_name" name="ed_name" placeholder="이름">
+        </div>
+
+        <!-- 별명 확인(수정 가능) -->
+        <div class="edit_user">
+            <input type="text" id="ed_nickname" name="ed_nickname" placeholder="별명">
+
+            <!-- 중복 확인 -->
+            <input type="button" id="ed_check_nickname" name="ed_check_nickname" value="중복확인">
+        </div>
+
+        <!-- 아이디 확인 -->
+        <div class="edit_user">
+            <input type="text" id="ed_id" name="ed_id" placeholder="아이디">
+        </div>
+
+        <!-- 비밀번호 확인(수정 가능) -->
+        <div class="edit_user">
+            <input type="password" id="ed_password" name="ed_password" placeholder="비밀번호">
+        </div>
+
+        <!-- 이메일 확인 -->
+        <div class="edit_user">
+            <input type="email" id="ed_email" name="ed_email" placeholder="이메일">
+        </div>
+
+        <br/>
+
+        <!-- 변경 완료 버튼 -->
+        <div class="edit_user">
+            <input type="button" id="edit_user_btn" name="edit_user_btn" value="변경 완료">
+        </div>
+    </div>
+</body>
+
+</html>

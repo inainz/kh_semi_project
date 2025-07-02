@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link href="css/signup.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- 이름 -->
+        <div class="signup">
+            <input type="text" id="si_name" name="si_name" placeholder="이름">
+        </div>
+
+        <!-- 별명 -->
+        <div class="signup">
+            <input type="text" id="si_nickname" name="si_nickname" placeholder="별명">
+
+            <!-- 중복확인 -->
+            <input type="button" id="si_check_nickname" name="si_check_nickname" value="중복확인">
+        </div>
+
+        <!-- 아이디 -->
+        <div class="signup">
+            <input type="text" id="si_id" name="si_id" placeholder="아이디">
+
+            <!-- 중복확인 -->
+            <input type="button" id="si_check_id" name="si_check_id" value="중복확인">
+        </div>
+
+        <!-- 비밀번호 -->
+        <div class="signup">
+            <input type="password" id="si_password" name="si_password" placeholder="비밀번호">
+        </div>
+
+        <!-- 이메일 -->
+        <div class="signup">
+            <input type="email" id="si_email" name="si_email" placeholder="이메일">
+
+            <!-- 중복확인 -->
+            <input type="button" id="si_send_email" name="si_send_email" value="인증">
+        </div>
+
+        <br/>
+
+        <!-- 회원가입 버튼 -->
+        <div class="signup">
+            <input type="button" id="signup_btn" name="signup_btn" value="회원가입">
+        </div>
+    </div>
+</body>
+
+</html>
