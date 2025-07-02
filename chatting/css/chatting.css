@@ -35,12 +35,24 @@
     margin-left: 0px 3px;
 }
 
-.date{
+.rChat .date{
     margin-left: 3px;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     font-size: 10px;
     color:gray;
+    /* float: left; */
 } 
+.lChat .date{
+    margin-left: 3px;
+    /* margin-top: 15px; */
+    font-size: 10px;
+    color:gray;
+    /* float: right; */
+} 
+
+.content{
+    width:290px;
+}
 
 #messageDiv{
     border: 1px solid black;
