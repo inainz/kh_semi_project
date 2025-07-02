@@ -11,8 +11,36 @@
     border: 1px solid black;
     margin: 5px;
     background-color: white;
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
 }
+
+.rChat{
+    text-align: right;
+}
+
+.dsib{
+
+    display: inline-block;
+    vertical-align: top;
+}
+.chatting{
+    height: 30px;
+    margin:10px 5px;
+}
+
+.name{
+    color: blue;
+}
+.content{
+    margin-left: 0px 3px;
+}
+
+.date{
+    margin-left: 3px;
+    margin-top: 15px;
+    font-size: 10px;
+    color:gray;
+} 
 
 #messageDiv{
     border: 1px solid black;
