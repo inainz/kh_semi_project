@@ -1,0 +1,90 @@
+/* 로고 관련 */
+
+#site-rogo{
+    width: 205px;
+    height: 120px;
+}
+
+/* 게시판 관련 */
+
+.board-button{
+    background-color: rgba(164, 120, 100, 0.7);
+    border-style: none;
+    border-radius: 10px;
+    color: white;
+    height: 35px;
+}
+#notice-board{
+    width: 110px;
+}
+
+#license-review-board{
+    width: 90px;
+}
+
+#study-board{
+    width: 80px;
+}
+
+#guideline-board{
+    width: 120px;
+}
+
+#login-td{
+    padding-left: 800px;
+}
+
+#board-title{
+    padding-left: 200px;
+}
+
+/* 게시글 관련 */
+
+#board-table{
+    margin-top: 100px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+th{
+    border-bottom: 1px solid black;
+}
+
+#post_no{
+    width: 100px;
+}
+
+#post_date{
+    width: 150px;
+}
+
+#post_title{
+    width: 1000px;
+}
+
+#post_author{
+    width: 150px;
+}
+
+#post_views{
+    width: 150px;
+}
+
+#post_recommend{
+    width: 150px;
+}
+
+.post-tr>td{
+    border: 1px solid lightgray;
+    padding-block: 20px;
+}
+
+/* 검색 관련 */
+#boardList-search{
+    padding-left: 550px;
+    padding-top: 150px;
+}
+
+#search-content{
+    width: 500px;
+}
