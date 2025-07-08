@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/postCss.css" rel="stylesheet" type="text/css"/>
+    <script src="../1_mainPage/js/mainPageJs.js"></script>
+    <title>게시글 내용 페이지</title>
+</head>
+<body>
+    <table>
+        <tr id="page-head">
+            <td>
+                <a href="../1_mainPage/1_mainPage.html">
+                    <img src="0_image/로고.png" alt="사이트로고" id="site-rogo"/>
+                </a>
+            </td>
+            <td>
+                <button class="board-button" id="notice-board">공지사항 게시판</button>
+            </td>
+            <td>
+                <button class="board-button" id="license-review-board">자격증 후기</button>
+            </td>
+            <td>
+                <button class="board-button" id="study-board">공부 방법</button>
+            </td>
+            <td>
+                <button class="board-button" id="guideline-board">초보자 가이드라인</button>
+            </td>
+            <td id="login-td">
+                <button class="board-button">회원 정보</button>
+            </td>
+        </tr>
+    </table>
+    <form id="postContent-form">
+        <div id="postContent-category">
+            카테고리 종류
+        </div>
+        <div id="postContent-title">
+            게시글 제목(좌측 정렬 사용)
+        </div>
+        <div id="postContent-date">
+            07.07
+        </div>
+        <div id="postContent-views">
+            조회수 : 0
+        </div>
+        <div id="postContent-recommend">
+            추천수 : 0
+        </div>
+        <br/>
+        <textarea id="postContent-content" readonly>본문 내용</textarea>
+        <br/>
+        <button class="postContent-buttons" id="postContent-editButton">수정</button>
+        <button class="postContent-buttons">삭제</button>
+        <button class="postContent-buttons">목록</button>
+        <br/>
+        <textarea id="postContent-reply">댓글 창</textarea>
+        <br/>
+        <input type="text" id="postContent-replyContent"/>
+        <button id="replyButton">등록</button>
+    </form>
+</body>
+</html>

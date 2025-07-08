@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/postWriteCss.css" rel="stylesheet" type="text/css"/>
+    <script src="../1_mainPage/js/mainPageJs.js"></script>
+    <title>게시글 내용 페이지</title>
+</head>
+<body>
+    <table>
+        <tr id="page-head">
+            <td>
+                <a href="../1_mainPage/2_mainPage(member).html">
+                    <img src="0_image/로고.png" alt="사이트로고" id="site-rogo"/>
+                </a>
+            </td>
+            <td>
+                <button class="board-button" id="notice-board">공지사항 게시판</button>
+            </td>
+            <td>
+                <button class="board-button" id="license-review-board">자격증 후기</button>
+            </td>
+            <td>
+                <button class="board-button" id="study-board">공부 방법</button>
+            </td>
+            <td>
+                <button class="board-button" id="guideline-board">초보자 가이드라인</button>
+            </td>
+            <td id="board-title">
+                게시글 작성 페이지
+            </td>
+            <td id="login-td">
+                <button class="board-button">회원 정보</button>
+            </td>
+        </tr>
+    </table>
+    <form id="postContent-form">
+        <select>
+            <option>공지사항</option>
+            <option>자격증 후기</option>
+            <option>공부 방법</option>
+            <option>초보자 가이드라인</option>
+        </select>
+        <input type="text" id="postWrite-title" placeholder="제목을 입력하세요."/>
+        <br/>
+        <textarea id="postWrite-content" placeholder="내용을 입력하세요."></textarea>
+        <br/>
+        <label id="fileLabel">첨부파일</label>
+        <input type="text" id="fileUrl" placeholder="첨부파일 경로"/>
+        <button>...찾기</button>
+        <br/>
+        <br/>
+        <br/>
+        <button id="postWrite-cancelButton">취소</button>
+        <button id="postWrite-commitButton">완료</button>
+    </form>
+</body>
+</html>
