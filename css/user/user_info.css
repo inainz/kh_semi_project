@@ -96,6 +96,25 @@ hr {
   height: 100%;
 }
 
+
+/* 메인화면으로 이동 */
+.user_info_main {
+  padding-top: 165px;
+  text-align: center;
+}
+
+/* 메인화면으로 이동 hover */
+.user_info_main a:hover {
+  color: #a47864;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.user_info_main a{
+  text-decoration: none;
+  color: gray;
+}
+
 /* 메뉴 hover */
 .user_info_menu ul li:hover,
 .user_info_menu ul li.active {

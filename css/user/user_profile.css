@@ -83,12 +83,22 @@ hr {
   margin: 10px 0;
 }
 
-/* 메뉴 목록 */
-.user_profile_menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  flex-grow: 1;
+/* 메인화면으로 이동 */
+.user_profile_main {
+  padding-top: 390px;
+  text-align: center;
+}
+
+/* 메인화면으로 이동 hover */
+.user_profile_main a:hover {
+  color: #a47864;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.user_profile_main a{
+  text-decoration: none;
+  color: gray;
 }
 
 .user_profile_menu ul li {
