@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/boardPageCss.css" rel="stylesheet" type="text/css"/>
+    <script src="../1_mainPage/js/mainPageJs.js"></script>
+    <title>공지사항 게시판</title>
+</head>
+<body>
+    <table>
+        <tr id="page-head">
+            <td>
+                <a href="../1_mainPage/1_mainPage.html">
+                    <img src="0_iamge/로고.png" alt="사이트로고" id="site-rogo"/>
+                </a>
+            </td>
+            <td>
+                <button class="board-button" id="notice-board">공지사항 게시판</button>
+            </td>
+            <td>
+                <button class="board-button" id="license-review-board">자격증 후기</button>
+            </td>
+            <td>
+                <button class="board-button" id="study-board">공부 방법</button>
+            </td>
+            <td>
+                <button class="board-button" id="guideline-board">초보자 가이드라인</button>
+            </td>
+            <td id="board-title">
+                공지사항 게시판
+            </td>
+            <td id="login-td">
+                <button class="board-button">회원정보</button>
+            </td>
+        </tr>
+    </table>
+
+    <table id="board-table">
+        <tr>
+            <th id="post_no">글 번호</th>
+            <th id="post_date">작성 날짜</th>
+            <th id="post_title">제목</th>
+            <th id="post_author">작성자</th>
+            <th id="post_views">조회수</th>
+        </tr>
+        <tr class="post-tr">
+            <td>1</td>
+            <td>2025-06-30</td>
+            <td>제목</td>
+            <td>관리자</td>
+            <td>조회수</td>
+        </tr>
+        <tr class="post-tr">
+            <td>2</td>
+            <td>2025-06-30</td>
+            <td>제목</td>
+            <td>관리자</td>
+            <td>조회수</td>
+        </tr>
+        <tr class="post-tr">
+            <td>3</td>
+            <td>2025-06-30</td>
+            <td>제목</td>
+            <td>관리자</td>
+            <td>조회수</td>
+        </tr>
+        <tr class="post-tr">
+            <td>4</td>
+            <td>2025-06-30</td>
+            <td>제목</td>
+            <td>관리자</td>
+            <td>조회수</td>
+        </tr>
+    </table>
+    <form id="boardList-search">
+        <select>
+            <option>제목</option>
+            <option>제목+내용</option>
+            <option>작성자</option>
+        </select>
+        <input type="text" id="search-content"/>
+        <button>검색</button>
+    </form>
+</body>
+</html>
