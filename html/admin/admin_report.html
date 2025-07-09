@@ -11,11 +11,55 @@
     <!-- Main -->
     <main class="main">
       <!-- admin-top -->
-       <div class="page-title">신고 관리</div>
-       <div>
+       <div class="report-title">신고 관리</div>
+      <div class="filter-row">
+        <select>
+          <option>게시글 신고</option>
+          <option>회원 신고</option>
+          <option>신고 카테고리2</option>
+          <option>신고 카테고리3</option>
+        </select>
+        <select>
+          <option>신고자</option>
+          <option>??</option>
+        </select>
+        <input class="filter-text" type="text" placeholder="검색어"/>
+        <button>검색</button>
+      </div>
 
 
+
+      <div class="report-list">
         
-       </div>
+        <div class="report-item-head">
+            <div>연번</div>&nbsp;
+            <div></div> &nbsp;
+            <div class="item-label-head"> 신고내용 </div>
+            <div class="writer-label-head"> 신고자 </div>
+            <div class="status-label-head"> 처리상태 </div>
+            <div class="item-date-head"> 날짜 </div>
+        </div>
+
+        <!-- 반복 -->
+        <a href="./admin_report_manage.html">
+          <div class="report-item">
+            <div>(연번)</div>&nbsp;
+            <div>|</div> &nbsp;
+            <div class="item-label"> (신고내용) </div>
+            <div class="writer-label">(신고자)</div>
+            <div class="status-label"> (처리상태) </div>
+            <div class="item-date"> (날짜) </div>
+          </div>
+        </a>
+
+        <div class="pagination">
+            <span class="prev page">&lt; Previous</span>
+            <span class="page current">1</span>
+            <span class="page">2</span>
+            <span class="page">3</span>
+            <span class="page">4</span>
+            <span class="page">5</span>
+            <span class="next page">Next &gt;</span>
+        </div>
 </body>
 </html>
