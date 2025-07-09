@@ -1,0 +1,243 @@
+/*admin-top.html*/
+.circle-btn {
+  width: 32px; height: 32px;
+  border-radius: 50%; border: 1px solid #ccc;
+  background: #f8f8f8; display: flex;
+  align-items: center; justify-content: center;
+  font-size: 18px; cursor: pointer;
+}
+
+/*admin_board_manage.html*/
+body { margin: 0; background: #fff; }
+.container { display: flex; height: 100vh; }
+    /* main content */
+.main {
+  flex: 1;
+  padding: 32px 32px 0 32px;
+  position: relative;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.top-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.board-title {
+  font-size: 19px; font-weight: bold;
+  margin-bottom: 20px;
+}
+.board-header {
+  background: #f7f7f7;
+  border-radius: 10px 10px 0 0;
+  padding: 18px 20px 16px 20px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0;
+  border: 1px solid #eee;
+  border-bottom: none;
+}
+.board-header .title { font-weight: bold; margin-right: 10px; }
+.board-header .meta {
+  font-size: 14px; color: #555; margin-right: 10px;
+}
+.board-header .header-actions {
+  margin-left: auto; display: flex; gap: 6px;
+}
+.board-header .action-btn {
+  padding: 3px 10px; font-size: 13px;
+  border-radius: 6px; border: none;
+  background: #222; color: #fff;
+  cursor: pointer;
+}
+.board-header .action-btn.delete {
+  background: #333; color: #fff;
+}
+.board-content {
+  min-height: 180px;
+  border: 1px solid #eee;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 0;
+  padding: 28px 20px;
+  background: #fff;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.attachment {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 0 0 10px 10px;
+  padding: 16px 20px;
+  font-size: 15px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+.attachment > div {
+  margin-right: 7px;
+}
+.attachment-header-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 6px;
+}
+
+
+/*admin-sidebar.html*/
+.sidebar {
+    width: 270px;
+    border-right: 1px solid #ccc;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0 0 0;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 0 24px 16px 24px;
+    border-bottom: 1px solid #eee;
+}
+.profile-img {
+    width: 56px; height: 56px;
+    border-radius: 50%; object-fit: cover;
+    margin-right: 16px;
+    background: #eee;
+}
+.profile-info { flex: 1; }
+.profile-name { font-weight: bold; }
+.profile-role { font-size: 13px; color: #999; }
+.logout-btn {
+    padding: 6px 18px;
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 8px;
+}
+.menu-list {
+    padding: 24px;
+}
+.menu-section {
+    margin-bottom: 20px;
+}
+.menu-title { font-weight: bold; margin-bottom: 3px; }
+.menu-desc { font-size: 13px; color: #999; }
+
+.menu-list a {
+  display: block;
+  text-decoration: none;      /* 밑줄 제거 */
+  color: inherit;             /* 텍스트 색상 상속 */
+}
+
+.menu-list a:hover .menu-section,
+.menu-list a:focus .menu-section {
+  background: #e6f0ff;        /* 호버 시 배경색 */
+  border-radius: 10px;
+}
+
+
+/*admin_board.html*/
+/* main content */
+.filter-row {
+  display: flex; align-items: center;
+  gap: 10px; margin-bottom: 16px;
+}
+.filter-row select, .filter-row input {
+  padding: 7px 12px; font-size: 14px;
+  border: 1px solid #ccc; border-radius: 6px;
+}
+.filter-row button {
+  padding: 7px 16px; font-size: 14px;
+  border-radius: 6px; border: none; background: #222; color: #fff;
+  cursor: pointer;
+}
+.filter-row .close-btn {
+  font-size: 19px; background: none; border: none; color: #666; cursor: pointer;
+  margin-left: 4px;
+}
+.filter-text{
+  font-size: 19px;
+}
+.board-list {
+  border-radius: 12px;
+  border: 1px solid #eee;
+  padding: 8px 0;
+  background: #fafafa;
+  margin-bottom: 20px;
+}
+.board-item {
+  display: flex; align-items: center;
+  padding: 12px 24px; border-bottom: 1px solid #eee;
+  font-size: 15px;
+}
+.board-item:last-child { border-bottom: none; }
+.board-item .item-label { flex: 1; }
+.board-item .writer-label { margin: 0 20px; color: #777; font-size: 14px; }
+.board-item .item-date { margin-right: 20px; color: #777; font-size: 14px; }
+.board-item .item-action {
+  display: flex; gap: 6px;
+}
+.board-item .action-btn {
+  padding: 3px 10px; font-size: 13px;
+  border-radius: 6px; border: none; background: #222; color: #fff;
+  cursor: pointer;
+}
+.pagination {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  font-size: 16px; margin-bottom: 32px;
+}
+.pagination .page, .pagination .prev, .pagination .next {
+  padding: 5px 12px; border: 1px solid #ccc; border-radius: 6px; background: #f5f5f5; cursor: pointer;
+}
+.pagination .current { background: #222; color: #fff; }
+
+a {
+  color: inherit;              /* 텍스트 색상 상속 */
+  text-decoration: none;       /* 밑줄 제거 */
+}
+a:hover .board-item,
+a:focus .board-item {
+  background: #f0f7ff;         /* 호버 시 배경색 */
+  box-shadow: 0 2px 8px rgba(50,90,200,0.06);
+  cursor: pointer;
+}
+
+
+/*admin_member_manage.html*/
+.page-title {
+  font-size: 19px; font-weight: bold;
+  margin-bottom: 20px;
+}
+.member-detail-card {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 30px 24px;
+  max-width: 700px;
+}
+.member-detail-row {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+  padding: 13px 0;
+  font-size: 16px;
+}
+.member-detail-row:last-child { border-bottom: none; }
+.member-detail-label { width: 180px; color: #222; }
+.member-detail-value { flex: 1; }
+.edit-btn {
+  padding: 3px 10px; font-size: 13px;
+  border-radius: 6px; border: none; background: #222; color: #fff;
+  cursor: pointer;
+  margin-left: 10px;
+}
