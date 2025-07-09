@@ -2,7 +2,7 @@ window.onload = () =>{
     console.log(location.href);
     const buttons = document.querySelectorAll('.board-button');
     
-    if(location.href == "file:///D:/test/kh_semi_project/html/board/1_noticeBoardListPage.html"){
+    if(location.href.includes("1_noticeBoardListPage.html")){
         const button = document.getElementById('notice-board');
         button.style.background = '#a47864';
 
@@ -30,7 +30,7 @@ window.onload = () =>{
         buttons[4].addEventListener('mouseout', function(){
             buttons[4].style.background = '';
         });
-    } else if(location.href == "file:///D:/test/kh_semi_project/html/board/2_memberBoardListPage1.html"){
+    } else if(location.href.includes("2_memberBoardListPage1.html")){
         const button = document.getElementById('license-review-board');
         button.style.background = '#a47864';
 
@@ -58,7 +58,7 @@ window.onload = () =>{
         buttons[4].addEventListener('mouseout', function(){
             buttons[4].style.background = '';
         });
-    } else if(location.href == "file:///D:/test/kh_semi_project/html/board/3_memberBoardListPage2.html"){
+    } else if(location.href.includes("3_memberBoardListPage2.html")){
         const button = document.getElementById('study-board');
         button.style.background = '#a47864';
 
@@ -86,7 +86,7 @@ window.onload = () =>{
         buttons[4].addEventListener('mouseout', function(){
             buttons[4].style.background = '';
         });
-    } else if(location.href == "file:///D:/test/kh_semi_project/html/board/4_memberBoardListPage3.html"){
+    } else if(location.href.includes("4_memberBoardListPage3.html")){
         const button = document.getElementById('guideline-board');
         button.style.background = '#a47864';
 
@@ -114,7 +114,7 @@ window.onload = () =>{
         buttons[4].addEventListener('mouseout', function(){
             buttons[4].style.background = '';
         });
-    }else if(location.href == "file:///D:/test/kh_semi_project/html/board/5_memberBoardListPage4.html"){
+    }else if(location.href.includes("5_memberBoardListPage4.html")){
         const button = document.getElementById('bestPost-board');
         button.style.background = '#a47864';
         buttons[0].addEventListener('mouseover', function(){
