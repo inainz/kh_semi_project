@@ -9,7 +9,7 @@
 /* 게시판 관련 */
 
 .board-button{
-    background-color: rgba(164, 120, 100, 0.7);
+    background-color: rgba(164, 120, 100, 0.5);
     border-style: none;
     border-radius: 10px;
     color: white;
@@ -17,7 +17,7 @@
 }
 
 #notice-board{
-    width: 110px;
+    width: 80px;
 }
 
 #license-review-board{
@@ -30,6 +30,10 @@
 
 #guideline-board{
     width: 120px;
+}
+
+#bestPost-board{
+    width: 60px;
 }
 
 #login-td{
