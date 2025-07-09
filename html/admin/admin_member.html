@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>회원 관리 페이지 1</title>
+  <link href="../css/admin/admin.css" rel="stylesheet" type="text/css"/> <!-- css링크 -->
+  <style>
+    /* main content */
+    .page-title {
+      font-size: 19px; font-weight: bold;
+      margin-bottom: 16px;
+    }
+    .filter-row {
+      display: flex; align-items: center;
+      gap: 10px; margin-bottom: 18px;
+    }
+    .filter-row select {
+      padding: 7px 12px; font-size: 14px;
+      border: 1px solid #ccc; border-radius: 6px;
+    }
+    .filter-row .close-btn {
+      font-size: 19px; background: none; border: none; color: #666; cursor: pointer;
+      margin-left: 2px;
+    }
+    .filter-row button {
+      padding: 7px 16px; font-size: 14px;
+      border-radius: 6px; border: none; background: #222; color: #fff;
+      cursor: pointer;
+      margin-left: 6px;
+    }
+    .member-list {
+      border-radius: 12px;
+      border: 1px solid #eee;
+      padding: 8px 0;
+      background: #fafafa;
+      margin-bottom: 22px;
+    }
+    .member-header,
+    .member-item {
+      display: flex; align-items: center;
+      padding: 10px 24px; border-bottom: 1px solid #eee;
+      font-size: 15px;
+    }
+    .member-header { font-weight: bold; background: #f6f6f6; }
+    .member-item:last-child { border-bottom: none; }
+    .member-col { flex: 1; }
+    .member-col.short { flex: 0.4; }
+    .member-action {
+      display: flex; gap: 6px;
+    }
+    .edit-btn {
+      padding: 3px 10px; font-size: 13px;
+      border-radius: 6px; border: none; background: #222; color: #fff;
+      cursor: pointer;
+    }
+    .pagination {
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      font-size: 16px; margin-bottom: 32px;
+    }
+    .pagination .page, .pagination .prev, .pagination .next {
+      padding: 5px 12px; border: 1px solid #ccc; border-radius: 6px; background: #f5f5f5; cursor: pointer;
+    }
+    .pagination .current { background: #222; color: #fff; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <!-- Main -->
+    <main class="main">
+      <!-- admin-top -->
+      <div class="page-title">회원 관리</div>
+      <div class="filter-row">
+        <select>
+          <option>Value</option>
+        </select>
+        <select>
+          <option>Value</option>
+        </select>
+        <input class="filter-text" type="text" placeholder="검색어"/>
+        <button>Button</button>
+      </div>
+      <div class="member-list">
+        <div class="member-header">
+          <div class="member-col short">연번</div>
+          <div class="member-col">회원아이디</div>
+          <div class="member-col">이름</div>
+          <div class="member-col">이메일</div>
+          <div class="member-col">상태</div>
+          <div class="member-col">등급</div>
+          <div class="member-action"></div>
+        </div>
+
+        <!-- 필요한 만큼 member-item 반복 -->
+        <a href="./admin_member_manage.html">
+        <div class="member-item">
+          <div class="member-col short">1</div>
+          <div class="member-col">회원아이디</div>
+          <div class="member-col">이름</div>
+          <div class="member-col">이메일</div>
+          <div class="member-col">상태</div>
+          <div class="member-col">등급</div>
+        </div>
+        </a>
+
+        
+      </div>
+      <div class="pagination">
+        <span class="prev page">&lt; Previous</span>
+        <span class="page current">1</span>
+        <span class="page">2</span>
+        <span class="page">3</span>
+        <span class="page">...</span>
+        <span class="page">67</span>
+        <span class="page">68</span>
+        <span class="next page">Next &gt;</span>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
