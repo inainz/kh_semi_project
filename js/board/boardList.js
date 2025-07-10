@@ -1,152 +1,38 @@
 window.onload = () =>{
-    console.log(location.href);
+    // board-button클래스를 가지고 있는 태그를 buttons에 담기
     const buttons = document.querySelectorAll('.board-button');
-    
-    if(location.href.includes("1_noticeBoardListPage.html")){
-        const button = document.getElementById('notice-board');
-        button.style.background = '#a47864';
 
-        buttons[1].addEventListener('mouseover', function(){
-            buttons[1].style.background = '#a47864';
-        });
-        buttons[1].addEventListener('mouseout', function(){
-            buttons[1].style.background = '';
-        });
-        buttons[2].addEventListener('mouseover', function(){
-            buttons[2].style.background = '#a47864';
-        });
-        buttons[2].addEventListener('mouseout', function(){
-            buttons[2].style.background = '';
-        });
-        buttons[3].addEventListener('mouseover', function(){
-            buttons[3].style.background = '#a47864';
-        });
-        buttons[3].addEventListener('mouseout', function(){
-            buttons[3].style.background = '';
-        });
-        buttons[4].addEventListener('mouseover', function(){
-            buttons[4].style.background = '#a47864';
-        });
-        buttons[4].addEventListener('mouseout', function(){
-            buttons[4].style.background = '';
-        });
-    } else if(location.href.includes("2_memberBoardListPage1.html")){
-        const button = document.getElementById('license-review-board');
-        button.style.background = '#a47864';
+    // select 변수 생성
+    let select;
 
-        buttons[0].addEventListener('mouseover', function(){
-            buttons[0].style.background = '#a47864';
-        });
-        buttons[0].addEventListener('mouseout', function(){
-            buttons[0].style.background = '';
-        });
-        buttons[2].addEventListener('mouseover', function(){
-            buttons[2].style.background = '#a47864';
-        });
-        buttons[2].addEventListener('mouseout', function(){
-            buttons[2].style.background = '';
-        });
-        buttons[3].addEventListener('mouseover', function(){
-            buttons[3].style.background = '#a47864';
-        });
-        buttons[3].addEventListener('mouseout', function(){
-            buttons[3].style.background = '';
-        });
-        buttons[4].addEventListener('mouseover', function(){
-            buttons[4].style.background = '#a47864';
-        });
-        buttons[4].addEventListener('mouseout', function(){
-            buttons[4].style.background = '';
-        });
-    } else if(location.href.includes("3_memberBoardListPage2.html")){
-        const button = document.getElementById('study-board');
-        button.style.background = '#a47864';
-
-        buttons[0].addEventListener('mouseover', function(){
-            buttons[0].style.background = '#a47864';
-        });
-        buttons[0].addEventListener('mouseout', function(){
-            buttons[0].style.background = '';
-        });
-        buttons[1].addEventListener('mouseover', function(){
-            buttons[1].style.background = '#a47864';
-        });
-        buttons[1].addEventListener('mouseout', function(){
-            buttons[1].style.background = '';
-        });
-        buttons[3].addEventListener('mouseover', function(){
-            buttons[3].style.background = '#a47864';
-        });
-        buttons[3].addEventListener('mouseout', function(){
-            buttons[3].style.background = '';
-        });
-        buttons[4].addEventListener('mouseover', function(){
-            buttons[4].style.background = '#a47864';
-        });
-        buttons[4].addEventListener('mouseout', function(){
-            buttons[4].style.background = '';
-        });
-    } else if(location.href.includes("4_memberBoardListPage3.html")){
-        const button = document.getElementById('guideline-board');
-        button.style.background = '#a47864';
-
-        buttons[0].addEventListener('mouseover', function(){
-            buttons[0].style.background = '#a47864';
-        });
-        buttons[0].addEventListener('mouseout', function(){
-            buttons[0].style.background = '';
-        });
-        buttons[1].addEventListener('mouseover', function(){
-            buttons[1].style.background = '#a47864';
-        });
-        buttons[1].addEventListener('mouseout', function(){
-            buttons[1].style.background = '';
-        });
-        buttons[2].addEventListener('mouseover', function(){
-            buttons[2].style.background = '#a47864';
-        });
-        buttons[2].addEventListener('mouseout', function(){
-            buttons[2].style.background = '';
-        });
-        buttons[4].addEventListener('mouseover', function(){
-            buttons[4].style.background = '#a47864';
-        });
-        buttons[4].addEventListener('mouseout', function(){
-            buttons[4].style.background = '';
-        });
-    }else if(location.href.includes("5_memberBoardListPage4.html")){
-        const button = document.getElementById('bestPost-board');
-        button.style.background = '#a47864';
-        buttons[0].addEventListener('mouseover', function(){
-            buttons[0].style.background = '#a47864';
-        });
-        buttons[0].addEventListener('mouseout', function(){
-            buttons[0].style.background = '';
-        });
-        buttons[1].addEventListener('mouseover', function(){
-            buttons[1].style.background = '#a47864';
-        });
-        buttons[1].addEventListener('mouseout', function(){
-            buttons[1].style.background = '';
-        });
-        buttons[2].addEventListener('mouseover', function(){
-            buttons[2].style.background = '#a47864';
-        });
-        buttons[2].addEventListener('mouseout', function(){
-            buttons[2].style.background = '';
-        });
-        buttons[3].addEventListener('mouseover', function(){
-            buttons[3].style.background = '#a47864';
-        });
-        buttons[3].addEventListener('mouseout', function(){
-            buttons[3].style.background = '';
-        });
+    // 각각 URL마다 select변수에 index와 매칭 시킬 수 있는 숫자 대입
+    if(location.href.includes('notice')){
+        select = 0;
+    } else if(location.href.includes('license')){
+        select = 1;
+    } else if(location.href.includes('study')){
+        select = 2;
+    } else if(location.href.includes('guideline')){
+        select = 3;
+    } else if(location.href.includes('bestPost')){
+        select = 4;
     }
 
-    buttons[5].addEventListener('mouseover', function(){
-        buttons[5].style.background = '#a47864';
-    });
-    buttons[5].addEventListener('mouseout', function(){
-        buttons[5].style.background = '';
-        });
+    /* for문을 이용하여 buttons의 index와 각각의 URL마다 매칭 시킬 수 있게 만든
+    // select와 비교하여 index와 select가 일치하면 배경색을 넣어줌
+    // index와 select가 일치하지 않으면 addEventListener이용하여 이벤트 추가
+    // 이벤트가 들어온 요소에만 배경색이 바뀌어야 하므로 function()함수를 이용하여
+       this 사용 */
+    for(let i = 0; i < buttons.length; i++){
+        if(i == select){
+            buttons[i].style.background = '#a47864';
+        } else {
+            buttons[i].addEventListener('mouseover', function(){
+                this.style.background = '#a47864';
+            });
+            buttons[i].addEventListener('mouseout', function(){
+                this.style.background = '';
+            });
+        }
+    }
 }
