@@ -11,6 +11,17 @@ body {
     align-items: center;
 }
 
+/* 사이트 로고 */
+#sitelogo {
+    display: block;
+    text-align: center;
+}
+
+#sitelogo img {
+    width: 300px;
+    height: auto;
+}
+
 /* 비밀번호 박스 */
 .find_pw {
     display: flex;

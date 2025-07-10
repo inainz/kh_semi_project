@@ -12,6 +12,17 @@ body {
     margin: 0;
 }
 
+/* 사이트 로고 */
+#sitelogo {
+    display: block;
+    text-align: center;
+}
+
+#sitelogo img {
+    width: 300px;
+    height: auto;
+}
+
 /* 입력 영역 */
 .signup {
     margin-bottom: 15px;

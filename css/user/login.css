@@ -12,6 +12,18 @@ body {
     margin: 0;
 }
 
+/* 사이트 로고 */
+#sitelogo {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#sitelogo img {
+    width: 300px;
+    height: auto;
+}
+
 /* 입력 칸 스타일 */
 .login {
     margin-bottom: 15px;

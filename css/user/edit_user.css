@@ -18,6 +18,17 @@ body {
     gap: 10px;
 }
 
+/* 사이트 로고 */
+#sitelogo {
+    display: block;
+    text-align: center;
+}
+
+#sitelogo img {
+    width: 300px;
+    height: auto;
+}
+
 /* 회원 정보 칸 */
 .edit_user input[type="text"],
 .edit_user input[type="password"],

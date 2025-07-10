@@ -11,6 +11,17 @@ body {
     align-items: center;
 }
 
+/* 사이트 로고 */
+#sitelogo {
+    display: block;
+    text-align: center;
+}
+
+#sitelogo img {
+    width: 300px;
+    height: auto;
+}
+
 /* 이름, 이메일 입력 칸 */
 .finding_id {
     margin-bottom: 15px;
