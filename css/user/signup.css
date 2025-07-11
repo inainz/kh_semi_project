@@ -70,6 +70,10 @@ body {
     background-color: #8b634d;
 }
 
+#si_send_email {
+    width: 120px;
+}
+
 /* 회원가입 버튼 */
 #signup_btn {
     width: 100%;
