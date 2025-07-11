@@ -16,7 +16,7 @@
             <!-- 회원정보 -->
             <p class="welcome"><span class="pr_nickname">닉네임</span>님의 프로필</p>
 
-            <br/>
+            <br />
 
             <!-- 팔로우 -->
             <div class="follow">
@@ -33,7 +33,7 @@
                     <input type="button" id="subscribe_btn" value="구독">
 
                     <!-- 신고 -->
-                    <input type="button" id="report_btn" value="신고" onclick="popupUser();">
+                    <input type="button" id="report_btn" value="신고" onclick="openReportModal()">
                 </div>
             </div>
         </div>
@@ -56,6 +56,25 @@
         <!-- 선택한 메뉴 내용 -->
         <div class="menu_content">
             <p>목록</p>
+        </div>
+    </div>
+
+    <!-- 신고 모달창-->
+    <div id="reportModal" class="modal">
+        <div class="modal-content">
+            <div class="container">
+                <div class="report">
+                    <input type="text" id="re_nickname" readonly />
+                </div>
+                <div class="report">
+                    <textarea id="report_reason" maxlength="50" rows="3" cols="40"
+                        placeholder="신고 사유를 입력해주세요(50자)"></textarea>
+                </div>
+                <div class="report_btn">
+                    <input type="button" class="report_btn" value="신고하기" onclick="submitReport()">
+                    <input type="button" class="report_btn" value="취소" onclick="closeReportModal()">
+                </div>
+            </div>
         </div>
     </div>
 </body>

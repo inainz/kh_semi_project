@@ -142,3 +142,72 @@ hr {
   padding: 20px;
   font-size: 16px;
 }
+
+/* 신고 모달창 */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+}
+
+.report {
+  margin-bottom: 15px;
+}
+
+.report input[type="text"],
+#report_reason {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 3px solid #a47864;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+#report_reason {
+  resize: none;
+  line-height: normal;
+}
+
+.report input[type="text"]:focus,
+#report_reason:focus {
+  outline: none;
+  border-color: #a47864;
+}
+
+.report_btn {
+  display: flex;
+  gap: 10px;
+}
+
+.report_btn input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #a47864;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.report_btn input:hover {
+  background-color: #8b634d;
+}
