@@ -53,8 +53,13 @@ body {
 }
 
 /* 신고 버튼 */
-#report_btn {
-    width: 100%;
+.report_btn {
+    display: flex;
+    gap: 10px;
+}
+
+#report_btn, #report_cancel {
+    flex: 1;
     padding: 12px;
     font-size: 20px;
     background-color: #a47864;
@@ -64,8 +69,10 @@ body {
     font-weight: bold;
     cursor: pointer;
     box-sizing: border-box;
+    transition: background-color 0.3s;
 }
 
-#report_btn:hover {
+#report_btn:hover,
+#report_cancel:hover {
     background-color: #8b634d;
 }
