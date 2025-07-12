@@ -147,3 +147,61 @@ hr {
   padding: 20px;
   font-size: 16px;
 }
+
+/* 탈퇴 모달 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content p {
+  color: #a47864;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#de_password {
+    padding: 12px 16px;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 3px solid #a47864;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#delete_user_btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #a47864;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  box-sizing: border-box;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#delete_user_btn:hover {
+  background-color: #8b634d;
+}

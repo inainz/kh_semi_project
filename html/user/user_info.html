@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>마이페이지</title>
     <link href="../../css/user/user_info.css" rel="stylesheet">
+    <script src="../../js/user/user_info.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
             </div>
         </div>
 
-        <hr/>
+        <hr />
 
         <div class="user_info_menu">
             <!-- 메뉴 목록 -->
@@ -37,7 +38,7 @@
                 <li>내가 쓴 댓글</li>
                 <li>추천한 게시글</li>
                 <li><a href="edit_user.html">정보 변경</a></li>
-                <li><a href="delete_user.html">탈퇴</a></li>
+                <li><span id="openDeleteModal" class="clickable">탈퇴</span></li>
             </ul>
         </div>
 
@@ -58,6 +59,16 @@
         <!-- 선택한 메뉴 내용 -->
         <div class="menu_content">
             <p>목록</p>
+        </div>
+    </div>
+
+    <!-- 탈퇴 모달창 -->
+    <div id="deleteModal" class="modal">
+        <div class="modal-content">
+            <p>비밀번호를 입력하세요</p>
+            <input type="password" id="de_password" placeholder="비밀번호" />
+            <br />
+            <input type="button" id="delete_user_btn" value="탈퇴" />
         </div>
     </div>
 </body>
